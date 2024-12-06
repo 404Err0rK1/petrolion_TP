@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clientLogoHover {
+    @apply hover:scale-110 duration-500 cursor-pointer hover:bg-lightGray;
+  }
+  .GiCheckMarkStyle {
+    @apply bg-green-500 text-white w-6 h-6 rounded-full text-center flex justify-center items-center;
+  }
+  .coreServicesIcon {
+    @apply w-[70px] h-[70px] bg-black text-white flex justify-center items-center rounded-full absolute -top-8 left-40 hover:bg-darkBg border-[1px] border-black duration-300;
+  }
+  .galleryImg {
+    @apply max-w-[400px] h-[400px] object-cover hover:scale-110 duration-500;
+  }
+}
